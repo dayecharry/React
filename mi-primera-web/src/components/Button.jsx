@@ -1,9 +1,13 @@
 
-const Button = ({ titulo }) => {
-
+const Button = ({ titulo, counter, changeCounter }) => {
+    console.log(titulo, counter, changeCounter)
+    const handleClick = () => {
+        console.log("Me han clicado")
+        changeCounter(counter + 1)
+    }
     return (
         <div>
-            <button>{titulo}</button>
+            <button onClick={handleClick}>{titulo}</button>
         </div>
     )
 }

@@ -1,7 +1,8 @@
-const Info = ({ person }) => {
+const Info = ({ person, estilo }) => {
 
-    return (<p>
-        Nombre: {person.name} Apellido: {person.lastname}
-    </p>)
+    return (
+        <p className={estilo}>
+            Nombre: {person.name} Apellido: {person.lastname}
+        </p>)
 }
 export default Info
