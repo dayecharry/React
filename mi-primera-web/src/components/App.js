@@ -13,6 +13,7 @@ function App() {
   };
 
   const [counter, setCounter] = useState(0);
+
   //setCounter(counter + 1);
   // counter ++ --> counter = counter +1
 
