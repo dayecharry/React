@@ -1,0 +1,12 @@
+section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+article{
+  width: 20%;
+  border: 1px solid red;
+}
+img{
+  width: 100%;
+}
