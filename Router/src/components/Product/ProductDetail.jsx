@@ -8,6 +8,8 @@ function ProductDetail() {
     const findproduct = products.items.find((prod) => prod.id === id)
     console.log(findproduct)
 
+    // valido si la variable findproduct tiene algun producto, y  pinto todo el detalle
+    // si no ha encontrado el producto que se ha pasado por la url va a renderizar el componente  de error 404
     return findproduct ? (
         <>
             <h1>Componente Detalle Producto {id}</h1>
@@ -21,8 +23,6 @@ function ProductDetail() {
         </>
     )
         :
-
-        <NotFound />
-
+        < NotFound />
 }
 export default ProductDetail;
