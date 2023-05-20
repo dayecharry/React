@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+// store, reduces, redux
 import reducers from './redux';
 
 //redux-thunk permite a los creadores de acciones invertír el control despachando funciones. Van a recibir dispatch como argumento y capaz llamarlo asíncronamente. Estas funciones son llamadas thunks.
