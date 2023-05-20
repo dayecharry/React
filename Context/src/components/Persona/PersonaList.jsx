@@ -3,8 +3,9 @@ import axios from "axios"
 
 function PersonaList() {
 
-    // const SERVER_URL = process.env.REACT_APP_SERVER_URL
-    // console.log(SERVER_URL)
+    const SERVER_URL = process.env.REACT_APP_SERVER_URL
+    console.log(SERVER_URL);
+    console.log(process.env.REACT_APP_API_KEY)
     const [listUser, setListUser] = useState([])
 
     const mapeoHtml = (data) => {
