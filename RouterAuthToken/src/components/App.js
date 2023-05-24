@@ -10,7 +10,6 @@ import AuthRoute from './AuthRoute/AuthRoute';
 import Check from './Check';
 import { API } from '../services/api';
 
-const userList = [];
 function App() {
   const navigate = useNavigate();
   // primer estado del user null, aun no se  define
@@ -18,7 +17,6 @@ function App() {
   const ls = JSON.parse(localStorage.getItem('token'));
   const [user, setUser] = useState(ls);
   const [loginError, setLoginError] = useState('');
-  const [registerError, setRegisterError] = useState('');
 
   const loginUser = (formData, prevRoute) => {
     // Hago el login con los datos que se encuentran en la BD
